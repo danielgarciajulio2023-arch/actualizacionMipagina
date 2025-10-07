@@ -1,0 +1,339 @@
+:root {
+    --color-primario: #1A2A40; 
+    --color-secundario: #E67E22; 
+    --color-fondo: #f4f4f4; 
+    --color-texto: #333;
+    --color-acento-clic: #008000; 
+    --color-tarjeta-fondo: #2B3A50; 
+    --color-card-clara: #ffffff; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: var(--color-primario);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 20px;
+    flex-direction: column;
+}
+
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+}
+.icono {
+    width: 120px;
+    transition: transform 0.4s ease;
+    filter: invert(1) grayscale(100%) brightness(1.5);
+}
+
+.icono:hover {
+    transform: scale(1.05);
+}
+
+.texto-central h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.texto-central p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.texto-central a {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.texto-central a:hover {
+    background-color: #cf6e1a;
+}
+main {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    background: var(--color-fondo);
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--color-texto);
+}
+section h2 {
+    color: var(--color-primario);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+#tabla h2 {
+    color: white;
+}
+
+.contenedor-central {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#novedades {
+    background-color: var(--color-fondo);
+}
+
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card-producto {
+    background-color: var(--color-card-clara);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-producto img {
+    width: 150px; 
+    height: 150px;
+    object-fit: contain; 
+    margin-bottom: 15px;
+    border-radius: 5px; 
+}
+
+.card-producto h3 {
+    color: var(--color-primario);
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.card-producto p {
+    font-size: 0.95em;
+    color: var(--color-texto);
+    margin-bottom: 0;
+}
+#tabla {
+    background-color: var(--color-tarjeta-fondo);
+    color: white;
+    padding: 60px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+th {
+    background: var(--color-secundario);
+    color: white;
+}
+
+tr {
+    transition: background-color 0.3s;
+}
+
+tr:nth-child(even) {
+    background-color: #384a60;
+}
+
+tr:nth-child(odd) {
+     background-color: #4a5c75;
+}
+
+tr:hover {
+    background-color: #5c708a;
+}
+
+#filtroTabla {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #444; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: var(--color-texto);
+}
+
+.filtro-contenedor {
+    padding: 15px; 
+    border: 1px solid #4a5c75; 
+    border-radius: 8px;
+    background-color: #384a60;
+    margin-bottom: 20px;
+}
+
+.filtro-contenedor label {
+    color: white;
+}
+#contacto {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 60px 20px;
+}
+
+#contacto h2 {
+    color: white; 
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 10px; 
+    border-bottom: 3px solid white;
+    display: inline-block; 
+}
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    background-color: var(--color-tarjeta-fondo);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px; 
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+
+    background-color: var(--color-tarjeta-fondo); 
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.form-group label {
+    font-weight: bold;
+    color: white; 
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="number"],
+#contacto textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 100%; 
+    transition: border-color 0.3s;
+    background-color: white; 
+    color: var(--color-texto); 
+}
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #777;
+    margin: 40px 0;
+}
+#contacto input[type="submit"] {
+    background-color: var(--color-acento-clic);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+footer {
+    background: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: var(--color-secundario);
+}
