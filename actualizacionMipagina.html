@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferreteria la bendecida  - Ferretería Profesional</title>
-    
-    <link rel="stylesheet" href="login.css">
-    
+    <title>Ferretería La Bendecida - Tu Ferretería de Confianza</title>
+      <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
-        <h1> Ferreteria la bendecida </h1>
+        <h1>🔧 Ferretería La Bendecida</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#novedades">Productos</a></li>
                 <li><a href="#tabla">Catálogo</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -27,77 +26,80 @@
             
             <div class="texto-central">
                 <h2>Ferretería Profesional a tu Servicio</h2>
-                <p>En Herramientas Plus encontrarás la mejor calidad en herramientas, materiales y asesoramiento profesional..</p>
+                <p>Encuentra la mejor calidad en herramientas, materiales y asesoramiento profesional. ¡Tu proyecto es nuestra prioridad!</p>
                 <a href="#novedades">Ver Novedades</a>
             </div>
             
-            <img src="https://cdn-icons-png.flaticon.com/512/2476/2476688.png" alt="Gráfico de Barras" class="icono"> 
+            <img src="https://cdn-icons-png.flaticon.com/512/2476/2476688.png" alt="Herramientas" class="icono"> 
         </div>
     </section>
 
     <main>
-        
         <section id="novedades">
             <div class="contenedor-central">
-                <h2>Novedades y Productos Destacados</h2>
+                <h2>Productos Destacados</h2>
                 <div class="productos-grid">
-                    
                     <div class="card-producto">
                         <img src="Taladro Inalámbrico 20V.jpg.jpg" alt="Taladro Inalámbrico 20V">
                         <h3>Taladro Inalámbrico 20V</h3>
-                        <p>Potente y ligero, con dos baterías de litio.</p>
-                        <p style="margin-top: 10px; font-weight: bold; color: var(--color-secundario);">$380.000</p>
+                        <p>Potente y ligero, con dos baterías de litio. Ideal para trabajos profesionales.</p>
+                        <p class="precio">$380.000</p>
                     </div>
 
                     <div class="card-producto">
-                        <img src="Martillo de Uña Curva.jpg.jpg"alt="Martillo de Uña Curva">
+                        <img src="Martillo de Uña Curva.jpg.jpg" alt="Martillo de Uña Curva">
                         <h3>Martillo de Uña Curva</h3>
-                        <p>Mango de fibra de vidrio para mayor absorción de impacto.</p>
-                        <p style="margin-top: 10px; font-weight: bold; color: var(--color-secundario);">$45.000</p>
+                        <p>Mango de fibra de vidrio para mayor absorción de impacto. Duradero y resistente.</p>
+                        <p class="precio">$45.000</p>
                     </div>
 
                     <div class="card-producto">
-                        <img src="Llave Ajustable de 12.png.jpg" alt="Llave Ajustable de 12">
+                        <img src="Llave Ajustable de 12.png.jpg" alt="Llave Ajustable">
                         <h3>Llave Ajustable de 12"</h3>
                         <p>Cuerpo de acero forjado y acabado cromado de alta calidad.</p>
-                        <p style="margin-top: 10px; font-weight: bold; color: var(--color-secundario);">$62.000</p>
+                        <p class="precio">$62.000</p>
                     </div>
 
                     <div class="card-producto">
-                        <img src="Sierra de Calar Profesional.jpg.jpg" alt="Sierra de Calar Profesional">
+                        <img src="Sierra de Calar Profesional.jpg.jpg" alt="Sierra de Calar">
                         <h3>Sierra de Calar Profesional</h3>
                         <p>Ideal para cortes curvos y detallados en madera y metal.</p>
-                        <p style="margin-top: 10px; font-weight: bold; color: var(--color-secundario);">$210.000</p>
+                        <p class="precio">$210.000</p>
                     </div>
 
                     <div class="card-producto">
-                        <img src="Nivel Láser de Línea Cruzada.jpg.jpg" alt="Nivel Láser de Línea Cruzada">
+                        <img src="Nivel Láser de Línea Cruzada.jpg.jpg" alt="Nivel Láser">
                         <h3>Nivel Láser de Línea Cruzada</h3>
                         <p>Autonivelación rápida y alta visibilidad, incluye soporte magnético.</p>
-                        <p style="margin-top: 10px; font-weight: bold; color: var(--color-secundario);">$550.000</p>
+                        <p class="precio">$550.000</p>
                     </div>
 
                     <div class="card-producto">
-                        <img src="Caja de Herramientas Metálica.jpg.jpg" alt="Caja de Herramientas Metálica">
+                        <img src="Caja de Herramientas Metálica.jpg.jpg" alt="Caja de Herramientas">
                         <h3>Caja de Herramientas Metálica</h3>
                         <p>Cinco bandejas y cierre de seguridad. Gran capacidad de almacenamiento.</p>
-                        <p style="margin-top: 10px; font-weight: bold; color: var(--color-secundario);">$95.000</p>
+                        <p class="precio">$95.000</p>
                     </div>
-
                 </div>
             </div>
         </section>
         
         <section id="tabla">
             <div class="contenedor-central">
-                <h2> Catálogo Completo de Herramientas</h2>
+                <h2>Catálogo Completo</h2>
+                
+                <div class="filtro-contenedor">
+                    <label for="filtroTabla">🔍 Buscar por Nombre o Marca</label>
+                    <input type="text" id="filtroTabla" placeholder="Ej: Taladro o Bosch...">
+                </div>
+
                 <table>
                     <thead>
                         <tr>
                             <th>Herramienta</th>
                             <th>Tipo</th>
                             <th>Uso</th>
-                            <th>Precio (COP)</th>
+                            <th>Precio</th>
                             <th>Marca</th>
                         </tr>
                     </thead>
@@ -144,19 +146,19 @@
         
         <section id="servicios">
             <div class="contenedor-central">
-                <h2 style="color: var(--color-primario);"> Nuestros Servicios</h2>
-                <div style="display: flex; justify-content: space-around; gap: 20px; flex-wrap: wrap; text-align: left;">
-                    <div style="max-width: 300px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
-                        <h3 style="color: var(--color-secundario); margin-bottom: 5px;">Venta de herramientas</h3>
-                        <p>Ofrecemos una amplia gama de herramientas eléctricas, manuales e industriales.</p>
+                <h2>Nuestros Servicios</h2>
+                <div class="servicios-grid">
+                    <div class="servicio-card">
+                        <h3>🛠️ Venta de Herramientas</h3>
+                        <p>Amplia gama de herramientas eléctricas, manuales e industriales de las mejores marcas del mercado.</p>
                     </div>
-                    <div style="max-width: 300px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
-                        <h3 style="color: var(--color-secundario); margin-bottom: 5px;">Asesoría técnica</h3>
-                        <p>Te ayudamos a elegir la herramienta ideal para tu proyecto.</p>
+                    <div class="servicio-card">
+                        <h3>💡 Asesoría Técnica</h3>
+                        <p>Te ayudamos a elegir la herramienta ideal para tu proyecto con la experiencia de nuestros expertos.</p>
                     </div>
-                    <div style="max-width: 300px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
-                        <h3 style="color: var(--color-secundario); margin-bottom: 5px;">Reparación y mantenimiento</h3>
-                        <p>Contamos con servicio técnico especializado en reparación de equipos.</p>
+                    <div class="servicio-card">
+                        <h3>🔧 Reparación y Mantenimiento</h3>
+                        <p>Servicio técnico especializado en reparación y mantenimiento de equipos y herramientas.</p>
                     </div>
                 </div>
             </div>
@@ -164,114 +166,85 @@
 
         <section id="contacto">
             <div class="contenedor-central">
-                <h2> Contáctanos</h2>
-
-                <h3>Formulario de Contacto General</h3>
+                <h2>Contáctanos</h2>
 
                 <form id="form-contacto">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" required>
+                    <h3>📧 Formulario de Contacto</h3>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" placeholder="tu@email.com" required>
 
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" rows="4" required></textarea>
+                    <textarea id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
 
                     <input type="submit" value="Enviar Mensaje">
                 </form>
 
-                <h3>Solicitud de Cotización</h3>
                 <form id="form-cotizacion">
+                    <h3>💰 Solicitud de Cotización</h3>
                     <label for="producto">Producto:</label>
-                    <input type="text" id="producto" required>
+                    <input type="text" id="producto" placeholder="Nombre del producto" required>
 
                     <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" required>
+                    <input type="number" id="cantidad" min="1" placeholder="1" required>
 
-                    <label for="detalles">Detalles adicionales:</label>
-                    <textarea id="detalles" rows="3"></textarea>
+                    <label for="detalles">Detalles Adicionales:</label>
+                    <textarea id="detalles" rows="3" placeholder="Especificaciones, colores, medidas, etc."></textarea>
 
                     <input type="submit" value="Solicitar Cotización">
-                </form>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p> 2025 Ferreteria la bendecida - Todos los derechos reservados.</p>
-        <p>Síguenos:
+        <p>&copy; 2025 Ferretería La Bendecida - Todos los derechos reservados</p>
+        <p>Síguenos en:
             <a href="#">Facebook</a> |
             <a href="#">Instagram</a> |
             <a href="#">WhatsApp</a>
         </p>
-        <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
-
             const forms = document.querySelectorAll('form');
             
-            const handleFormSubmit = (event) => {
-                event.preventDefault();
-                const formId = event.target.id;
-                let mensajeExito = "¡Gracias! Tu mensaje ha sido enviado correctamente. Te contactaremos pronto.";
-
-                if (formId === 'form-newsletter') {
-                    mensajeExito = "¡Suscripción exitosa! Pronto recibirás nuestras novedades en tu correo.";
-                } else if (formId === 'form-cotizacion') {
-                    mensajeExito = "¡Cotización solicitada! Revisaremos tu pedido y te enviaremos una respuesta.";
-                }
-                
-                alert(mensajeExito);
-                event.target.reset();
-            };
-
             forms.forEach(form => {
-                form.addEventListener('submit', handleFormSubmit);
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const formId = e.target.id;
+                    let mensaje = "¡Gracias! Tu mensaje ha sido enviado correctamente. Te contactaremos pronto.";
+
+                    if (formId === 'form-cotizacion') {
+                        mensaje = "¡Cotización solicitada! Revisaremos tu pedido y te enviaremos una respuesta.";
+                    }
+                    
+                    alert(mensaje);
+                    e.target.reset();
+                });
             });
 
-        
-            const tablaContainer = document.getElementById('tabla');
-            
-            if (tablaContainer) {
-                
-              
-                const filtroHTML = `
-                    <div class="filtro-contenedor">
-                        <label for="filtroTabla">Buscar Herramienta por Nombre o Marca:</label>
-                        <input type="text" id="filtroTabla" placeholder="Escribe aquí para filtrar la tabla...">
-                    </div>
-                `;
-              
-                const contenedorCentral = tablaContainer.querySelector('.contenedor-central');
-                if (contenedorCentral) {
-                    contenedorCentral.querySelector('h2').insertAdjacentHTML('afterend', filtroHTML);
-                }
-                
-                const filtroInput = document.getElementById('filtroTabla');
-                const filasTabla = tablaContainer.querySelectorAll('tbody tr');
+            const filtroInput = document.getElementById('filtroTabla');
+            const filasTabla = document.querySelectorAll('tbody tr');
 
-                filtroInput.addEventListener('keyup', () => {
-                    const filtroValor = filtroInput.value.toLowerCase();
+            filtroInput.addEventListener('input', () => {
+                const filtro = filtroInput.value.toLowerCase();
 
-                    filasTabla.forEach(fila => {
-                        
-                        const nombreHerramienta = fila.cells[0].textContent.toLowerCase();
-                        const marca = fila.cells[4].textContent.toLowerCase();
-                        
-                        if (nombreHerramienta.includes(filtroValor) || marca.includes(filtroValor)) {
-                            fila.style.display = ""; 
-                        } else {
-                            fila.style.display = "none";
-                        }
-                    });
+                filasTabla.forEach(fila => {
+                    const nombre = fila.cells[0].textContent.toLowerCase();
+                    const marca = fila.cells[4].textContent.toLowerCase();
+                    
+                    if (nombre.includes(filtro) || marca.includes(filtro)) {
+                        fila.style.display = "";
+                    } else {
+                        fila.style.display = "none";
+                    }
                 });
-            }
-
+            });
         });
     </script>
 </body>
